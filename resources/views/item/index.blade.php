@@ -15,7 +15,7 @@
             @endforeach
         </div>
         <div class="row justify-content-center">
-            {{ $items->links() }}
+            {{ $items->appends(['keyword' => Request::get('keyword')])->links() }}
         </div>
     </div>
 @endsection
