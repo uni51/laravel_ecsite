@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'ItemController@index');
+Route::get('/item/{item}', 'ItemController@show');
 
 Auth::routes();
 
